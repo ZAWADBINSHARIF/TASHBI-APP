@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TASHBI</string>
+
+    <string name="zero">00</string>
+    <string name="tashbi">TASHBI</string>
+    <string name="restore">RESTORE</string>
+</resources>
