@@ -3,4 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#35C4EF</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="tashbi_btn">#BC18DAEF</color>
+    <color name="restore_btn">#AFAF</color>
 </resources>

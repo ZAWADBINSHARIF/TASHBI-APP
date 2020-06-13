@@ -12,12 +12,15 @@
         android:id="@+id/restoreBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AFAF"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/restore_btn"
         android:text="@string/restore"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/counter_btn" />
+        app:layout_constraintEnd_toEndOf="@+id/counterNumber"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/counterNumber"
+        app:layout_constraintTop_toBottomOf="@+id/counterNumber"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/counterNumber"
@@ -37,12 +40,15 @@
         android:id="@+id/counter_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#BC18DAEF"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/tashbi_button"
         android:text="@string/tashbi"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/counterNumber"
-        app:layout_constraintStart_toStartOf="@+id/counterNumber"
-        app:layout_constraintTop_toBottomOf="@+id/counterNumber" />
+        app:layout_constraintEnd_toEndOf="@+id/restoreBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/restoreBtn"
+        app:layout_constraintTop_toBottomOf="@+id/restoreBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
