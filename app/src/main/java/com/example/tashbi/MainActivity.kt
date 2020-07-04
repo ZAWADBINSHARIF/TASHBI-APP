@@ -1,5 +1,6 @@
 package com.example.tashbi
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -11,13 +12,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val tashbiClickSound = MediaPlayer.create(this, R.raw.tashbi_sound)
+        val restoreClickSound = MediaPlayer.create(this, R.raw.restore_sound_2)
+
         counter_btn.setOnClickListener {
             val op = counterNumber.text.toString().toInt() + 1
             counterNumber.text = "$op"
+            tashbiClickSound.start()
         }
         restoreBtn.setOnClickListener {
             val op = "00"
             counterNumber.text = op
+            restoreClickSound.start()
         }
     }
 

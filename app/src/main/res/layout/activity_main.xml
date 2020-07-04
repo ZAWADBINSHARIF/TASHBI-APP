@@ -28,6 +28,7 @@
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="@string/zero"
+        android:textColor="@color/counter"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
